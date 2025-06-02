@@ -16,9 +16,12 @@
 ## Usage
 
 1. Unzip `Eidolon.zip`.
-2. Double-click `Eidolon.exe`.
-3. The application will appear within your system trap, but can be right clicked to be made bigger
-4. Type your prompt and press Enter.
+2. Find the model you downloaded earlier
+3. Create a folder called "Models" if it doesn't exist already
+4. Drag and drop your chosen .gguf quantized model
+5. Double-click "Eidolon.exe"
+6. The application will appear within your system trap, but can be right clicked to be made bigger
+7. Type your prompt and press Enter.
 
 ## Explanation
 This project:
