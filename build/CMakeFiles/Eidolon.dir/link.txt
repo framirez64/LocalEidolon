@@ -1,0 +1,3 @@
+C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\Eidolon.dir/objects.a
+C:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\Eidolon.dir/objects.a @CMakeFiles\Eidolon.dir\objects1.rsp
+C:\Qt\Tools\mingw1310_64\bin\c++.exe -mwindows -Wl,--whole-archive CMakeFiles\Eidolon.dir/objects.a -Wl,--no-whole-archive -o Eidolon.exe -Wl,--out-implib,libEidolon.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Eidolon.dir\linkLibs.rsp
