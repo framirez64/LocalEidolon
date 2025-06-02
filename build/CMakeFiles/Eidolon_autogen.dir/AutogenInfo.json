@@ -8,8 +8,6 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"N:/Users/GitHub/LocalEidolon/CMakeLists.txt",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake",
-		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystem.cmake.in",
 		"N:/Users/GitHub/LocalEidolon/build/CMakeFiles/3.30.5/CMakeSystem.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeMinGWFindMake.cmake",
 		"C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake",

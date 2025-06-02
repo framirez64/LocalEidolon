@@ -4,6 +4,9 @@
 #include <QTextCursor>
 #include <QCoreApplication>
 #include <QRegularExpression> 
+#include <QDir>
+#include <QThread>
+
 ConversationWindow::ConversationWindow(QWidget *parent)
     : QMainWindow(parent), llmProcess(nullptr) {
   setWindowTitle("Eidolon Chat");
@@ -32,7 +35,6 @@ ConversationWindow::ConversationWindow(QWidget *parent)
 
 void ConversationWindow::sendPrompt() {
   QString prompt = inputField->text().trimmed();
-  QString llmModelPath = QCoreApplication::applicationDirPath() + "/Models/Qwen3-1.7B-Q8_0.gguf";
   if (prompt.isEmpty()) return;
 
   conversationView->append(QString("<b>You:</b> %1").arg(prompt));
@@ -43,11 +45,23 @@ void ConversationWindow::sendPrompt() {
   }
   llmProcess = new QProcess(this);
   isLLMReplying = true; 
+
+  QDir modelsDir(QCoreApplication::applicationDirPath() + "/Models");
+  QStringList modelFiles = modelsDir.entryList(QStringList() << "*.gguf", QDir::Files);
+
+  QString modelPath;
+  if (!modelFiles.isEmpty()) {
+    modelPath = modelsDir.absoluteFilePath(modelFiles.first());
+  } else {
+    conversationView->append("<i>No .gguf model found in the Models/ folder!</i>");
+    return;  // Stop if no model is found
+  }
   QString program = QCoreApplication::applicationDirPath() + "/llama-cli.exe";;
   QStringList arguments;
-  arguments << "-m" << llmModelPath
+  arguments << "-m" << modelPath
              << "-p" << prompt
              << "-n" << "300"
+             << "--threads" << QString::number(QThread::idealThreadCount())
              << "--gpu-layers" << "29";
 
   llmProcess->setProgram(program);
@@ -61,7 +75,7 @@ void ConversationWindow::readLLMOutput() {
   QByteArray chunk = llmProcess->readAllStandardOutput();
   QString text = QString::fromUtf8(chunk).trimmed();
 
-  // ✅ Remove system tokens only at the beginning (as a single regex)
+  //  Remove system tokens only at the beginning (as a single regex)
   QRegularExpression systemTokensRegex(
     R"(^\s*(user|assistant|<think>|</think>|>)+\s*)",
     QRegularExpression::CaseInsensitiveOption
