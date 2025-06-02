@@ -1,6 +1,6 @@
 # Eidolon
 
-**Eidolon** is a lightweight desktop app that connects to `llama-cli` to dynamically generate answers using a local LLM model.
+**Eidolon** is a lightweight desktop app that connects uses llama.cpp for hosting LLMs locally on a machine.
 
 ## Features
 - **Dynamic Streaming**: Answers appear word by word in real-time.
@@ -8,10 +8,16 @@
 - **CUDA Acceleration**: Offloads 29 layers to GPU if available.
 - **Portable**: No external dependencies needed—just unzip and run!
 
+# Preparation
+- This project uses quantized models, so you're able to utilize any model that's formatted with a .gguf ending.
+- I recommend using QWEN3-1.7b, or something similarly lightweight.
+- The download for that can be found here: https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/tree/main 
 ## Usage
+
 1. Unzip `Eidolon.zip`.
 2. Double-click `Eidolon.exe`.
-3. Type your prompt and press Enter.
+3. The application will appear within your system trap, but can be right clicked to be made bigger
+4. Type your prompt and press Enter.
 
 ## Explanation
 This project:
