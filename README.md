@@ -11,7 +11,8 @@
 # Preparation
 - This project uses quantized models, so you're able to utilize any model that's formatted with a .gguf ending.
 - I recommend using QWEN3-1.7b, or something similarly lightweight.
-- The download for that can be found here: https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/tree/main 
+- The download for that can be found here: https://huggingface.co/Qwen/Qwen3-1.7B-GGUF/tree/main
+- After its downloaded, just drag it into the Model folder within the release
 ## Usage
 
 1. Unzip `Eidolon.zip`.
