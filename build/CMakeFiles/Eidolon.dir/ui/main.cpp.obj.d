@@ -322,9 +322,28 @@ CMakeFiles/Eidolon.dir/ui/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qstring.h \
+ N:/Users/GitHub/LocalEidolon/ui/CivetServer.h \
+ N:/Users/GitHub/LocalEidolon/ui/civetweb.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QDebug \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qdebug.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qtextstream.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qcontiguouscache.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qsharedpointer.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qshareddata.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qmap.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qshareddata_impl.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qset.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qhash.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qvarlengtharray.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -348,7 +367,6 @@ CMakeFiles/Eidolon.dir/ui/main.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qcolor.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qrgb.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qrgba64.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qshareddata.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qimage.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qpixelformat.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qtransform.h \
@@ -365,21 +383,6 @@ CMakeFiles/Eidolon.dir/ui/main.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qkeysequence.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qvariant.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qdebug.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qtextstream.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qcontiguouscache.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qsharedpointer.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/set \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_multiset.h \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/unordered_set \
- C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_set.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qmap.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qshareddata_impl.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qset.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qhash.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qvarlengtharray.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qpalette.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qbrush.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qfont.h \

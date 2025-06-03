@@ -1,38 +1,53 @@
-cmake_minimum_required(VERSION 3.16)
-project(Eidolon LANGUAGES CXX)
+cmake_minimum_required(VERSION 3.15)
+project(Eidolon LANGUAGES C CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
+set(CMAKE_AUTOUIC ON)
 
-find_package(Qt6 COMPONENTS Widgets REQUIRED)
+# Required Qt6 components
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
 
-# Add include directories if needed
-include_directories(${CMAKE_SOURCE_DIR}/ui)
+# Include app headers
 include_directories(
-  N:/Users/GitHub/LocalEidolon/uWebSockets/src
-  N:/Users/GitHub/LocalEidolon/uWebSockets/uSockets/src
-)
-add_executable(Eidolon
-  ui/main.cpp
-  ui/trayapp.cpp
-  ui/trayapp.h
-  ui/conversationwindow.cpp
-  ui/conversationwindow.h
-  ui/llmserver.cpp        # <-- Add this
-  ui/llmserver.h          # <-- Add this
-  resources.qrc
+    ${CMAKE_SOURCE_DIR}/ui
 )
 
-# Link Qt and uWebSockets dependencies
-target_link_libraries(Eidolon
-  Qt6::Widgets
-  uWS
-  ssl
-  crypto
-  z
-  stdc++fs
-  pthread
+# Define preprocessor macros
+add_compile_definitions(
+    USE_WEBSOCKET  # Enable WebSocket support in CivetWeb
+    NO_SSL         # Disable SSL (optional if not using HTTPS)
 )
 
-set_target_properties(Eidolon PROPERTIES WIN32_EXECUTABLE TRUE)
+# Source files
+set(CIVETWEB_SOURCES
+    ui/civetweb.c
+    ui/CivetServer.cpp
+)
+
+set(APP_SOURCES
+    ui/main.cpp
+    ui/trayapp.cpp
+    ui/conversationwindow.cpp
+    ui/llmserver.cpp
+    resources.qrc
+)
+
+# Executable
+add_executable(Eidolon WIN32
+    ${APP_SOURCES}
+    ${CIVETWEB_SOURCES}
+    ${RESOURCE_FILES}
+)
+
+# Ensure C source is treated as C
+set_source_files_properties(ui/civetweb.c PROPERTIES LANGUAGE C)
+
+# Link Qt libraries
+target_link_libraries(Eidolon PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
+
+# Link Winsock for Windows networking
+if (WIN32)
+    target_link_libraries(Eidolon PRIVATE ws2_32)
+endif()

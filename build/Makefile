@@ -202,6 +202,54 @@ Eidolon_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.s
 .PHONY : Eidolon_autogen/mocs_compilation.cpp.s
 
+ui/CivetServer.obj: ui/CivetServer.cpp.obj
+.PHONY : ui/CivetServer.obj
+
+# target to build an object file
+ui/CivetServer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj
+.PHONY : ui/CivetServer.cpp.obj
+
+ui/CivetServer.i: ui/CivetServer.cpp.i
+.PHONY : ui/CivetServer.i
+
+# target to preprocess a source file
+ui/CivetServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.i
+.PHONY : ui/CivetServer.cpp.i
+
+ui/CivetServer.s: ui/CivetServer.cpp.s
+.PHONY : ui/CivetServer.s
+
+# target to generate assembly for a file
+ui/CivetServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.s
+.PHONY : ui/CivetServer.cpp.s
+
+ui/civetweb.obj: ui/civetweb.c.obj
+.PHONY : ui/civetweb.obj
+
+# target to build an object file
+ui/civetweb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/civetweb.c.obj
+.PHONY : ui/civetweb.c.obj
+
+ui/civetweb.i: ui/civetweb.c.i
+.PHONY : ui/civetweb.i
+
+# target to preprocess a source file
+ui/civetweb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/civetweb.c.i
+.PHONY : ui/civetweb.c.i
+
+ui/civetweb.s: ui/civetweb.c.s
+.PHONY : ui/civetweb.s
+
+# target to generate assembly for a file
+ui/civetweb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/civetweb.c.s
+.PHONY : ui/civetweb.c.s
+
 ui/conversationwindow.obj: ui/conversationwindow.cpp.obj
 .PHONY : ui/conversationwindow.obj
 
@@ -315,6 +363,12 @@ help:
 	@echo ... Eidolon_autogen/mocs_compilation.obj
 	@echo ... Eidolon_autogen/mocs_compilation.i
 	@echo ... Eidolon_autogen/mocs_compilation.s
+	@echo ... ui/CivetServer.obj
+	@echo ... ui/CivetServer.i
+	@echo ... ui/CivetServer.s
+	@echo ... ui/civetweb.obj
+	@echo ... ui/civetweb.i
+	@echo ... ui/civetweb.s
 	@echo ... ui/conversationwindow.obj
 	@echo ... ui/conversationwindow.i
 	@echo ... ui/conversationwindow.s

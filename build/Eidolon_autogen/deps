@@ -1,4 +1,5 @@
 Eidolon_autogen/timestamp: \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CMakeCInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CMakeCXXInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CMakeCommonLanguageInclude.cmake \
@@ -9,11 +10,13 @@ Eidolon_autogen/timestamp: \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CMakeRCInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CMakeSystemSpecificInitialize.cmake \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CheckCXXSourceCompiles.cmake \
-	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CheckIncludeFileCXX.cmake \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CheckIncludeFile.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/CheckLibraryExists.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-C.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU-CXX.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Compiler/GNU.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/FindPackageHandleStandardArgs.cmake \
@@ -21,15 +24,20 @@ Eidolon_autogen/timestamp: \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/FindThreads.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/FindVulkan.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/GNUInstallDirs.cmake \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCLinkerInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCXXLinkerInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Internal/CMakeCommonLinkerInformation.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Internal/CheckFlagCommonConfig.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/GNU.cmake \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-C.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-CXX.cmake \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-C.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU-CXX.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Linker/Windows-GNU.cmake \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C-ABI.cmake \
+	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-C.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake \
@@ -37,8 +45,10 @@ Eidolon_autogen/timestamp: \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-windres.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows.cmake \
 	C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/WindowsPaths.cmake \
+	C:/Qt/6.9.0/mingw_64/include/QtCore/QDebug \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/QProcess \
+	C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/q20functional.h \
 	C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
@@ -451,7 +461,6 @@ Eidolon_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/specfun.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_function.h \
-	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algo.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_bvector.h \
@@ -479,7 +488,6 @@ Eidolon_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/streambuf_iterator.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
-	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
@@ -536,7 +544,6 @@ Eidolon_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error \
-	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/bessel_function.tcc \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/beta_function.tcc \
 	C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/ell_integral.tcc \
@@ -608,11 +615,16 @@ Eidolon_autogen/timestamp: \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
 	C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
 	N:/Users/GitHub/LocalEidolon/CMakeLists.txt \
+	N:/Users/GitHub/LocalEidolon/build/CMakeFiles/3.31.7/CMakeCCompiler.cmake \
 	N:/Users/GitHub/LocalEidolon/build/CMakeFiles/3.31.7/CMakeCXXCompiler.cmake \
 	N:/Users/GitHub/LocalEidolon/build/CMakeFiles/3.31.7/CMakeRCCompiler.cmake \
 	N:/Users/GitHub/LocalEidolon/build/CMakeFiles/3.31.7/CMakeSystem.cmake \
 	N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/moc_predefs.h \
 	N:/Users/GitHub/LocalEidolon/resources.qrc \
+	N:/Users/GitHub/LocalEidolon/ui/CivetServer.cpp \
+	N:/Users/GitHub/LocalEidolon/ui/CivetServer.h \
+	N:/Users/GitHub/LocalEidolon/ui/civetweb.c \
+	N:/Users/GitHub/LocalEidolon/ui/civetweb.h \
 	N:/Users/GitHub/LocalEidolon/ui/conversationwindow.cpp \
 	N:/Users/GitHub/LocalEidolon/ui/conversationwindow.h \
 	N:/Users/GitHub/LocalEidolon/ui/llmserver.cpp \

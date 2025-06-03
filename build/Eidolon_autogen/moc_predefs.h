@@ -144,6 +144,7 @@
 #define __cpp_raw_strings 200710L
 #define __INT_FAST32_MAX__ 0x7fffffff
 #define __DBL_HAS_INFINITY__ 1
+#define NO_SSL 1
 #define __INT64_MAX__ 0x7fffffffffffffffLL
 #define __SIZEOF_FLOAT__ 4
 #define __WINNT__ 1
@@ -264,6 +265,7 @@
 #define __FLT16_DIG__ 3
 #define __FLT32X_MIN__ 2.22507385850720138309023271733240406e-308F32x
 #define __SIG_ATOMIC_MAX__ 0x7fffffff
+#define USE_WEBSOCKET 1
 #define __cpp_constexpr 201603L
 #define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2
 #define __USER_LABEL_PREFIX__ 

@@ -1,44 +1,57 @@
 #include "llmserver.h"
-#include "App.h"
-#include <iostream>
+#include "CivetServer.h"
 
-LLMServer::LLMServer(QObject *parent) : QObject(parent), running(false) {}
+#include <QDebug>
+#include <QString>
+
+#define DOCUMENT_ROOT "."
+#define PORT "9001"
+
+LLMServer::LLMServer(QObject* parent)
+    : QObject(parent), server(nullptr), wsHandler(nullptr)
+{
+    // Do not start immediately—defer to start()
+}
 
 LLMServer::~LLMServer() {
     stop();
 }
 
 void LLMServer::start() {
-    if (running) return;
+    if (server) {
+        qDebug() << "[LLMServer] Already running.";
+        return;
+    }
 
-    running = true;
-    serverThread = std::thread([this]() {
-        struct PerSocketData {};
-        uWS::App().ws<PerSocketData>("/*", {
-            .open = [](auto* ws) {
-                std::cout << "Client connected\n";
-            },
-            .message = [this](auto* ws, std::string_view message, uWS::OpCode opCode) {
-                QString prompt = QString::fromStdString(std::string(message));
-                emit requestReceived(prompt);
-                ws->send("Received: " + std::string(message), opCode);
-            }
-        }).listen(9001, [](auto* token) {
-            if (token) {
-                std::cout << "LLM server listening on port 9001\n";
-            }
-        }).run();
-    });
+    const char* options[] = {
+        "document_root", DOCUMENT_ROOT,
+        "listening_ports", PORT,
+        nullptr
+    };
+
+    try {
+        server = new CivetServer(options);
+        wsHandler = new WebSocketHandlerImpl(this);
+        server->addWebSocketHandler("/ws", wsHandler);
+        qDebug() << "[LLMServer] WebSocket server started on port" << PORT;
+    } catch (const std::exception& e) {
+        qCritical() << "[LLMServer] Failed to start server:" << e.what();
+        stop();
+    }
 }
 
 void LLMServer::stop() {
-    if (!running) return;
-    running = false;
-    if (serverThread.joinable()) {
-        serverThread.detach(); // not ideal, but uWebSockets has no stop API
+    if (wsHandler) {
+        delete wsHandler;
+        wsHandler = nullptr;
+    }
+    if (server) {
+        delete server;
+        server = nullptr;
+        qDebug() << "[LLMServer] Server stopped.";
     }
 }
 
 bool LLMServer::isRunning() const {
-    return running;
+    return server != nullptr;
 }
