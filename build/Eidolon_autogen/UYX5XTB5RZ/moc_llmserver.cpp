@@ -1,12 +1,12 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'trayapp.h'
+** Meta object code from reading C++ file 'llmserver.h'
 **
 ** Created by: The Qt Meta Object Compiler version 69 (Qt 6.9.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../ui/trayapp.h"
+#include "../../../ui/llmserver.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
@@ -16,7 +16,7 @@
 
 #include <QtCore/qxptype_traits.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'trayapp.h' doesn't include <QObject>."
+#error "The header file 'llmserver.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 69
 #error "This file was generated using the moc from 6.9.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -31,98 +31,90 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 QT_WARNING_DISABLE_GCC("-Wuseless-cast")
 namespace {
-struct qt_meta_tag_ZN7TrayAppE_t {};
+struct qt_meta_tag_ZN9LLMServerE_t {};
 } // unnamed namespace
 
-template <> constexpr inline auto TrayApp::qt_create_metaobjectdata<qt_meta_tag_ZN7TrayAppE_t>()
+template <> constexpr inline auto LLMServer::qt_create_metaobjectdata<qt_meta_tag_ZN9LLMServerE_t>()
 {
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
-        "TrayApp",
-        "sendPrompt",
+        "LLMServer",
+        "requestReceived",
         "",
-        "prompt",
-        "showConversationWindow",
-        "toggleServerMode"
+        "prompt"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Signal 'sendPrompt'
+        // Signal 'requestReceived'
         QtMocHelpers::SignalData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::QString, 3 },
         }}),
-        // Slot 'showConversationWindow'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
-        // Slot 'toggleServerMode'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
     QtMocHelpers::UintData qt_enums {
     };
-    return QtMocHelpers::metaObjectData<TrayApp, qt_meta_tag_ZN7TrayAppE_t>(QMC::MetaObjectFlag{}, qt_stringData,
+    return QtMocHelpers::metaObjectData<LLMServer, qt_meta_tag_ZN9LLMServerE_t>(QMC::MetaObjectFlag{}, qt_stringData,
             qt_methods, qt_properties, qt_enums);
 }
-Q_CONSTINIT const QMetaObject TrayApp::staticMetaObject = { {
-    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7TrayAppE_t>.stringdata,
-    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7TrayAppE_t>.data,
+Q_CONSTINIT const QMetaObject LLMServer::staticMetaObject = { {
+    QMetaObject::SuperData::link<QObject::staticMetaObject>(),
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9LLMServerE_t>.stringdata,
+    qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9LLMServerE_t>.data,
     qt_static_metacall,
     nullptr,
-    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN7TrayAppE_t>.metaTypes,
+    qt_staticMetaObjectRelocatingContent<qt_meta_tag_ZN9LLMServerE_t>.metaTypes,
     nullptr
 } };
 
-void TrayApp::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void LLMServer::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
-    auto *_t = static_cast<TrayApp *>(_o);
+    auto *_t = static_cast<LLMServer *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->sendPrompt((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
-        case 1: _t->showConversationWindow(); break;
-        case 2: _t->toggleServerMode(); break;
+        case 0: _t->requestReceived((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (TrayApp::*)(const QString & )>(_a, &TrayApp::sendPrompt, 0))
+        if (QtMocHelpers::indexOfMethod<void (LLMServer::*)(const QString & )>(_a, &LLMServer::requestReceived, 0))
             return;
     }
 }
 
-const QMetaObject *TrayApp::metaObject() const
+const QMetaObject *LLMServer::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *TrayApp::qt_metacast(const char *_clname)
+void *LLMServer::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN7TrayAppE_t>.strings))
+    if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN9LLMServerE_t>.strings))
         return static_cast<void*>(this);
-    return QWidget::qt_metacast(_clname);
+    return QObject::qt_metacast(_clname);
 }
 
-int TrayApp::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int LLMServer::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QWidget::qt_metacall(_c, _id, _a);
+    _id = QObject::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 1)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 1;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 1)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 1;
     }
     return _id;
 }
 
 // SIGNAL 0
-void TrayApp::sendPrompt(const QString & _t1)
+void LLMServer::requestReceived(const QString & _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }

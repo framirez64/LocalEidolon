@@ -1,10 +1,11 @@
 CMakeFiles/Eidolon.dir/ui/main.cpp.obj: \
  N:\Users\GitHub\LocalEidolon\ui\main.cpp \
  N:\Users\GitHub\LocalEidolon\ui\trayapp.h \
- C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
- C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
- C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
- C:/Qt/6.9.0/mingw_64/include/QtGui/qtguiglobal.h \
+ N:\Users\GitHub\LocalEidolon\ui\llmserver.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qobjectdefs.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qglobal.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -151,13 +152,6 @@ CMakeFiles/Eidolon.dir/ui/main.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qtresource.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qttranslation.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qversiontagging.h \
- C:/Qt/6.9.0/mingw_64/include/QtGui/qtgui-config.h \
- C:/Qt/6.9.0/mingw_64/include/QtGui/qtguiexports.h \
- C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
- C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qobject.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qobjectdefs.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qnamespace.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qcompare.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qstdlibdetection.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qcomparehelpers.h \
@@ -328,6 +322,18 @@ CMakeFiles/Eidolon.dir/ui/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/chrono.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ratio \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qtguiglobal.h \
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qtgui-config.h \
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qtguiexports.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qobject.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qicon.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qsize.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qmargins.h \

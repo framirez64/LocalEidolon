@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp" "CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj.d"
   "N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/mocs_compilation.cpp" "CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj.d"
   "N:/Users/GitHub/LocalEidolon/ui/conversationwindow.cpp" "CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj.d"
+  "N:/Users/GitHub/LocalEidolon/ui/llmserver.cpp" "CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj.d"
   "N:/Users/GitHub/LocalEidolon/ui/main.cpp" "CMakeFiles/Eidolon.dir/ui/main.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/main.cpp.obj.d"
   "N:/Users/GitHub/LocalEidolon/ui/trayapp.cpp" "CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj.d"
   )

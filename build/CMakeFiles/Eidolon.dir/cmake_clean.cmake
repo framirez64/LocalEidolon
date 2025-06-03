@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj.d"
   "CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj"
   "CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj.d"
+  "CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj"
+  "CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj.d"
   "CMakeFiles/Eidolon.dir/ui/main.cpp.obj"
   "CMakeFiles/Eidolon.dir/ui/main.cpp.obj.d"
   "CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj"

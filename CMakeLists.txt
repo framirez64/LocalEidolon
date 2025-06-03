@@ -7,14 +7,32 @@ set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 COMPONENTS Widgets REQUIRED)
 
+# Add include directories if needed
+include_directories(${CMAKE_SOURCE_DIR}/ui)
+include_directories(
+  N:/Users/GitHub/LocalEidolon/uWebSockets/src
+  N:/Users/GitHub/LocalEidolon/uWebSockets/uSockets/src
+)
 add_executable(Eidolon
   ui/main.cpp
   ui/trayapp.cpp
   ui/trayapp.h
   ui/conversationwindow.cpp
   ui/conversationwindow.h
+  ui/llmserver.cpp        # <-- Add this
+  ui/llmserver.h          # <-- Add this
   resources.qrc
 )
 
-target_link_libraries(Eidolon Qt6::Widgets)
+# Link Qt and uWebSockets dependencies
+target_link_libraries(Eidolon
+  Qt6::Widgets
+  uWS
+  ssl
+  crypto
+  z
+  stdc++fs
+  pthread
+)
+
 set_target_properties(Eidolon PROPERTIES WIN32_EXECUTABLE TRUE)

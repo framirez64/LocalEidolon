@@ -1,6 +1,6 @@
 #ifndef TRAYAPP_H
 #define TRAYAPP_H
-
+#include "llmserver.h"
 #include <QSystemTrayIcon>
 #include <QMenu>
 #include <QAction>
@@ -19,12 +19,15 @@ signals:
 
 private slots:
   void showConversationWindow();  
+  void toggleServerMode();
 private:
   QSystemTrayIcon *trayIcon;
   QMenu *trayMenu;
   QAction *askAction;
   QAction *quitAction;
   ConversationWindow *conversationWindow = nullptr;  // 🔧 track your conversation window
+  LLMServer *server = nullptr;
+  QAction *toggleServerAction;
 };
 
 #endif // TRAYAPP_H

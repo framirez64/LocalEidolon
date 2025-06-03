@@ -406,8 +406,16 @@ CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qtmocconstants.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/q20algorithm.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/q23type_traits.h \
+ N:\Users\GitHub\LocalEidolon\build\Eidolon_autogen\UYX5XTB5RZ/moc_llmserver.cpp \
+ N:/Users/GitHub/LocalEidolon/ui/llmserver.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qobject.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/thread \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
+ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/this_thread_sleep.h \
  N:\Users\GitHub\LocalEidolon\build\Eidolon_autogen\UYX5XTB5RZ/moc_trayapp.cpp \
  N:/Users/GitHub/LocalEidolon/ui/trayapp.h \
+ N:/Users/GitHub/LocalEidolon/ui/llmserver.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMenu \
