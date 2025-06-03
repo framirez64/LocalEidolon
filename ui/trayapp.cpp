@@ -42,11 +42,11 @@ void TrayApp::showConversationWindow() {
   conversationWindow->activateWindow();
 }
 void TrayApp::toggleServerMode() {
-    if (server->isRunning()) {
-        server->stop();
-        showMessage("Server stopped.");
-    } else {
-        server->start();
-        showMessage("Server started.");
-    }
+  if (server->isRunning()) {
+      server->stopServer();
+      showMessage("Server stopped.");
+  } else {
+      server->startServer();
+      showMessage("Server started.");
+  }
 }

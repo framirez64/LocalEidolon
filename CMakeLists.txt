@@ -7,7 +7,7 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
 # Required Qt6 components
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Network)
 
 # Include app headers
 include_directories(
@@ -45,7 +45,7 @@ add_executable(Eidolon WIN32
 set_source_files_properties(ui/civetweb.c PROPERTIES LANGUAGE C)
 
 # Link Qt libraries
-target_link_libraries(Eidolon PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets)
+target_link_libraries(Eidolon PRIVATE Qt6::Core Qt6::Gui Qt6::Widgets Qt6::Network)
 
 # Link Winsock for Windows networking
 if (WIN32)

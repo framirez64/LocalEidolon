@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>llama-server WebSocket Test</title>
+</head>
+<body>
+  <h2>💬 llama-server WebSocket Test</h2>
+  <input id="prompt" placeholder="Type prompt here..." size="50">
+  <button onclick="sendPrompt()">Send</button>
+  <pre id="log" style="background: #111; color: #0f0; padding: 10px;"></pre>
+
+  <script>
+    const log = document.getElementById("log");
+    const socket = new WebSocket("ws://localhost:8080/ws");  // 👈 Adjust if you changed the port/path
+
+    socket.onopen = () => log.textContent += "✅ Connected to llama-server\n";
+    socket.onmessage = (event) => log.textContent += "📥 " + event.data + "\n";
+    socket.onerror = (error) => log.textContent += "❌ WebSocket Error\n";
+    socket.onclose = () => log.textContent += "🔌 Connection closed\n";
+
+    async function sendPromptHTTP() {
+    const res = await fetch("http://localhost:8080/completion", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+        prompt: "Hello, llama",
+        stream: false,
+        n_predict: 128
+        })
+    });
+
+    const json = await res.json();
+    console.log("🧠 Response:", json.content);
+    }
+
+  </script>
+</body>
+</html>

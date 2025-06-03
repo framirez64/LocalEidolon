@@ -1,57 +1,74 @@
 #include "llmserver.h"
-#include "CivetServer.h"
-
+#include <QCoreApplication>
+#include <QDir>
+#include <QThread>
 #include <QDebug>
-#include <QString>
-
-#define DOCUMENT_ROOT "."
-#define PORT "9001"
 
 LLMServer::LLMServer(QObject* parent)
-    : QObject(parent), server(nullptr), wsHandler(nullptr)
-{
-    // Do not start immediately—defer to start()
-}
+    : QObject(parent), serverProcess(nullptr) {}
 
 LLMServer::~LLMServer() {
-    stop();
+    stopServer();
 }
 
-void LLMServer::start() {
-    if (server) {
-        qDebug() << "[LLMServer] Already running.";
+void LLMServer::startServer() {
+    if (serverProcess) {
+        serverProcess->kill();
+        serverProcess->waitForFinished();
+        serverProcess->deleteLater();
+    }
+
+    serverProcess = new QProcess(this);
+
+    QString exePath = QCoreApplication::applicationDirPath() + "/llama-server.exe";
+
+    if (!QFile::exists(exePath)) {
+        qWarning() << "❌ llama-server.exe not found!";
         return;
     }
 
-    const char* options[] = {
-        "document_root", DOCUMENT_ROOT,
-        "listening_ports", PORT,
-        nullptr
-    };
+    QDir modelsDir(QCoreApplication::applicationDirPath() + "/Models");
+    QStringList modelFiles = modelsDir.entryList(QStringList() << "*.gguf", QDir::Files);
 
-    try {
-        server = new CivetServer(options);
-        wsHandler = new WebSocketHandlerImpl(this);
-        server->addWebSocketHandler("/ws", wsHandler);
-        qDebug() << "[LLMServer] WebSocket server started on port" << PORT;
-    } catch (const std::exception& e) {
-        qCritical() << "[LLMServer] Failed to start server:" << e.what();
-        stop();
+    QString modelPath;
+    if (!modelFiles.isEmpty()) {
+        modelPath = modelsDir.absoluteFilePath(modelFiles.first());
+    } else {
+        qWarning() << "❌ No .gguf model found in Models/";
+        return;
     }
+
+    QStringList args;
+    args << "-m" << modelPath
+         << "--port" << "8080"               // or 8000/9000 based on your client
+         << "--ctx-size" << "4096"
+         << "--threads" << QString::number(QThread::idealThreadCount())
+         << "--gpu-layers" << "29"
+         << "--verbose"; // Optional, useful for debugging
+
+    serverProcess->setProgram(exePath);
+    serverProcess->setArguments(args);
+
+    connect(serverProcess, &QProcess::readyReadStandardOutput, this, [this]() {
+        QByteArray output = serverProcess->readAllStandardOutput();
+        qDebug() << QString::fromUtf8(output);
+    });
+
+    connect(serverProcess, &QProcess::readyReadStandardError, this, [this]() {
+        QByteArray error = serverProcess->readAllStandardError();
+        qDebug() << "[stderr] " << QString::fromUtf8(error);
+    });
+
+    serverProcess->start();
+    qDebug() << "🚀 llama-server started.";
 }
 
-void LLMServer::stop() {
-    if (wsHandler) {
-        delete wsHandler;
-        wsHandler = nullptr;
+void LLMServer::stopServer() {
+    if (serverProcess && serverProcess->state() != QProcess::NotRunning) {
+        serverProcess->terminate();
+        serverProcess->waitForFinished(3000);
+        serverProcess->deleteLater();
+        serverProcess = nullptr;
+        qDebug() << "🛑 llama-server stopped.";
     }
-    if (server) {
-        delete server;
-        server = nullptr;
-        qDebug() << "[LLMServer] Server stopped.";
-    }
-}
-
-bool LLMServer::isRunning() const {
-    return server != nullptr;
 }

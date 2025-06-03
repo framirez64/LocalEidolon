@@ -1,8 +1,7 @@
 N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/UYX5XTB5RZ/moc_trayapp.cpp: N:/Users/GitHub/LocalEidolon/ui/trayapp.h \
   N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/moc_predefs.h \
-  C:/Qt/6.9.0/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
-  C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/QProcess \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
@@ -50,6 +49,7 @@ N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/UYX5XTB5RZ/moc_trayapp.cpp: N
   C:/Qt/6.9.0/mingw_64/include/QtCore/qglobalstatic.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qhash.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qhashfunctions.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qiodevice.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qiodevicebase.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qiterable.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qiterator.h \
@@ -73,6 +73,7 @@ N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/UYX5XTB5RZ/moc_trayapp.cpp: N
   C:/Qt/6.9.0/mingw_64/include/QtCore/qoverload.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qpair.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qpoint.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qprocess.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qprocessordetection.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qrect.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qrefcount.h \
@@ -376,6 +377,4 @@ N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/UYX5XTB5RZ/moc_trayapp.cpp: N
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  N:/Users/GitHub/LocalEidolon/ui/CivetServer.h \
-  N:/Users/GitHub/LocalEidolon/ui/civetweb.h \
   N:/Users/GitHub/LocalEidolon/ui/llmserver.h

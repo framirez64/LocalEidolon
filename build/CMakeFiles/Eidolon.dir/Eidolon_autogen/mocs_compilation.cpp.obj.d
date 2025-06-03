@@ -410,12 +410,6 @@ CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj: \
  N:/Users/GitHub/LocalEidolon/ui/llmserver.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qobject.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qstring.h \
- N:/Users/GitHub/LocalEidolon/ui/CivetServer.h \
- N:/Users/GitHub/LocalEidolon/ui/civetweb.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/QDebug \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qdebug.h \
  N:\Users\GitHub\LocalEidolon\build\Eidolon_autogen\UYX5XTB5RZ/moc_trayapp.cpp \
  N:/Users/GitHub/LocalEidolon/ui/trayapp.h \
  N:/Users/GitHub/LocalEidolon/ui/llmserver.h \

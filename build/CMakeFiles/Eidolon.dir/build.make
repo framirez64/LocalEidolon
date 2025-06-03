@@ -230,6 +230,7 @@ Eidolon.exe: CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj
 Eidolon.exe: CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 Eidolon.exe: CMakeFiles/Eidolon.dir/build.make
 Eidolon.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6Widgets.a
+Eidolon.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6Network.a
 Eidolon.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6Gui.a
 Eidolon.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6Core.a
 Eidolon.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6EntryPoint.a
