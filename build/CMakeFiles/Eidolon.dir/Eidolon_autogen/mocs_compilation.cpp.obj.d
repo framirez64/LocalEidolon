@@ -402,6 +402,9 @@ CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtCore/QProcess \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qprocess.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qtmochelpers.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qtmocconstants.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/q20algorithm.h \

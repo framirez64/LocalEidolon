@@ -39,22 +39,31 @@ template <> constexpr inline auto TrayApp::qt_create_metaobjectdata<qt_meta_tag_
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "TrayApp",
-        "sendPrompt",
+        "toggleServerMode",
         "",
-        "prompt",
         "showConversationWindow",
-        "toggleServerMode"
+        "openWebInterface",
+        "onServerStarted",
+        "onServerStopped",
+        "onServerError",
+        "error"
     };
 
     QtMocHelpers::UintData qt_methods {
-        // Signal 'sendPrompt'
-        QtMocHelpers::SignalData<void(const QString &)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
-            { QMetaType::QString, 3 },
-        }}),
-        // Slot 'showConversationWindow'
-        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'toggleServerMode'
+        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPublic, QMetaType::Void),
+        // Slot 'showConversationWindow'
+        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'openWebInterface'
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onServerStarted'
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onServerStopped'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onServerError'
+        QtMocHelpers::SlotData<void(const QString &)>(7, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 8 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -78,15 +87,14 @@ void TrayApp::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, voi
     auto *_t = static_cast<TrayApp *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->sendPrompt((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
+        case 0: _t->toggleServerMode(); break;
         case 1: _t->showConversationWindow(); break;
-        case 2: _t->toggleServerMode(); break;
+        case 2: _t->openWebInterface(); break;
+        case 3: _t->onServerStarted(); break;
+        case 4: _t->onServerStopped(); break;
+        case 5: _t->onServerError((*reinterpret_cast< std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
-    }
-    if (_c == QMetaObject::IndexOfMethod) {
-        if (QtMocHelpers::indexOfMethod<void (TrayApp::*)(const QString & )>(_a, &TrayApp::sendPrompt, 0))
-            return;
     }
 }
 
@@ -109,21 +117,15 @@ int TrayApp::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 6;
     }
     return _id;
-}
-
-// SIGNAL 0
-void TrayApp::sendPrompt(const QString & _t1)
-{
-    QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
 }
 QT_WARNING_POP

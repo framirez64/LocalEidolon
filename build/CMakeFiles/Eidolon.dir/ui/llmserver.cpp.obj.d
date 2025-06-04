@@ -409,4 +409,6 @@ CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_futex.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/QDebug \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qdebug.h
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qdebug.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QStandardPaths \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qstandardpaths.h

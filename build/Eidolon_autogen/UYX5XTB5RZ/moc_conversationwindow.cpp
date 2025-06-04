@@ -40,16 +40,22 @@ template <> constexpr inline auto ConversationWindow::qt_create_metaobjectdata<q
     namespace QMC = QtMocConstants;
     QtMocHelpers::StringRefStorage qt_stringData {
         "ConversationWindow",
-        "sendPrompt",
+        "setServerMode",
         "",
+        "enabled",
+        "sendPrompt",
         "readLLMOutput"
     };
 
     QtMocHelpers::UintData qt_methods {
+        // Slot 'setServerMode'
+        QtMocHelpers::SlotData<void(bool)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Bool, 3 },
+        }}),
         // Slot 'sendPrompt'
-        QtMocHelpers::SlotData<void()>(1, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'readLLMOutput'
-        QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -73,12 +79,12 @@ void ConversationWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
     auto *_t = static_cast<ConversationWindow *>(_o);
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: _t->sendPrompt(); break;
-        case 1: _t->readLLMOutput(); break;
+        case 0: _t->setServerMode((*reinterpret_cast< std::add_pointer_t<bool>>(_a[1]))); break;
+        case 1: _t->sendPrompt(); break;
+        case 2: _t->readLLMOutput(); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *ConversationWindow::metaObject() const
@@ -100,14 +106,14 @@ int ConversationWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

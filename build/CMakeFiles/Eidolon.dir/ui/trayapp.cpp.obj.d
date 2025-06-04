@@ -413,6 +413,9 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QPushButton \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -427,4 +430,12 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qlocale.h \
- C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.9.0/mingw_64/include/QtGui/QDesktopServices \
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qdesktopservices.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QUrl \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qurl.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h

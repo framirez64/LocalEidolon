@@ -1,39 +1,416 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>llama-server WebSocket Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>llama-server Test Interface</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .test-section {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .test-section h3 {
+            margin-top: 0;
+            color: #ffd700;
+        }
+        
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        #prompt, #httpPrompt {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #333;
+        }
+        
+        button {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(238, 90, 36, 0.4);
+        }
+        
+        button:disabled {
+            background: #666;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .status {
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        
+        .status.connected {
+            background: rgba(76, 175, 80, 0.3);
+            border: 1px solid #4CAF50;
+        }
+        
+        .status.disconnected {
+            background: rgba(244, 67, 54, 0.3);
+            border: 1px solid #f44336;
+        }
+        
+        .status.connecting {
+            background: rgba(255, 193, 7, 0.3);
+            border: 1px solid #FFC107;
+        }
+        
+        #log, #httpLog {
+            background: #1a1a1a;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            height: 200px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            border: 1px solid #333;
+            margin-top: 10px;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        #healthStatus {
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <h2>💬 llama-server WebSocket Test</h2>
-  <input id="prompt" placeholder="Type prompt here..." size="50">
-  <button onclick="sendPrompt()">Send</button>
-  <pre id="log" style="background: #111; color: #0f0; padding: 10px;"></pre>
+    <div class="container">
+        <h1>🤖 llama-server Test Interface</h1>
+        
+        <!-- Health Check Section -->
+        <div class="test-section">
+            <h3>🔍 Server Health Check</h3>
+            <div class="controls">
+                <button onclick="checkHealth()">Check Server Health</button>
+                <button onclick="checkModels()">List Models</button>
+            </div>
+            <div id="healthStatus">Click "Check Server Health" to test connection</div>
+        </div>
 
-  <script>
-    const log = document.getElementById("log");
-    const socket = new WebSocket("ws://localhost:8080/ws");  // 👈 Adjust if you changed the port/path
+        <!-- HTTP API Test Section -->
+        <div class="test-section">
+            <h3>🌐 HTTP API Test</h3>
+            <div class="input-group">
+                <input id="httpPrompt" placeholder="Type your prompt here..." value="Hello! How are you today?">
+                <button onclick="sendHTTPPrompt()">Send HTTP Request</button>
+                <button onclick="clearHttpLog()">Clear Log</button>
+            </div>
+            <div id="httpLog"></div>
+        </div>
 
-    socket.onopen = () => log.textContent += "✅ Connected to llama-server\n";
-    socket.onmessage = (event) => log.textContent += "📥 " + event.data + "\n";
-    socket.onerror = (error) => log.textContent += "❌ WebSocket Error\n";
-    socket.onclose = () => log.textContent += "🔌 Connection closed\n";
+        <!-- WebSocket Test Section -->
+        <div class="test-section">
+            <h3>⚡ WebSocket Test</h3>
+            <div id="wsStatus" class="status disconnected">WebSocket: Disconnected</div>
+            <div class="controls">
+                <button id="connectBtn" onclick="connectWebSocket()">Connect WebSocket</button>
+                <button id="disconnectBtn" onclick="disconnectWebSocket()" disabled>Disconnect</button>
+                <button onclick="clearWsLog()">Clear Log</button>
+            </div>
+            <div class="input-group">
+                <input id="prompt" placeholder="Type your prompt here..." disabled>
+                <button id="sendBtn" onclick="sendPrompt()" disabled>Send Message</button>
+            </div>
+            <div id="log"></div>
+        </div>
+    </div>
 
-    async function sendPromptHTTP() {
-    const res = await fetch("http://localhost:8080/completion", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-        prompt: "Hello, llama",
-        stream: false,
-        n_predict: 128
-        })
-    });
+    <script>
+        const log = document.getElementById("log");
+        const httpLog = document.getElementById("httpLog");
+        const wsStatus = document.getElementById("wsStatus");
+        const healthStatus = document.getElementById("healthStatus");
+        
+        let socket = null;
+        let isConnected = false;
 
-    const json = await res.json();
-    console.log("🧠 Response:", json.content);
-    }
+        // Utility functions
+        function addToLog(message, isHttp = false) {
+            const timestamp = new Date().toLocaleTimeString();
+            const logElement = isHttp ? httpLog : log;
+            logElement.textContent += `[${timestamp}] ${message}\n`;
+            logElement.scrollTop = logElement.scrollHeight;
+        }
 
-  </script>
+        function updateConnectionStatus(status) {
+            const connectBtn = document.getElementById("connectBtn");
+            const disconnectBtn = document.getElementById("disconnectBtn");
+            const sendBtn = document.getElementById("sendBtn");
+            const promptInput = document.getElementById("prompt");
+
+            switch(status) {
+                case 'connected':
+                    wsStatus.textContent = "WebSocket: Connected ✅";
+                    wsStatus.className = "status connected";
+                    connectBtn.disabled = true;
+                    disconnectBtn.disabled = false;
+                    sendBtn.disabled = false;
+                    promptInput.disabled = false;
+                    isConnected = true;
+                    break;
+                case 'disconnected':
+                    wsStatus.textContent = "WebSocket: Disconnected ❌";
+                    wsStatus.className = "status disconnected";
+                    connectBtn.disabled = false;
+                    disconnectBtn.disabled = true;
+                    sendBtn.disabled = true;
+                    promptInput.disabled = true;
+                    isConnected = false;
+                    break;
+                case 'connecting':
+                    wsStatus.textContent = "WebSocket: Connecting... ⏳";
+                    wsStatus.className = "status connecting";
+                    connectBtn.disabled = true;
+                    disconnectBtn.disabled = true;
+                    sendBtn.disabled = true;
+                    promptInput.disabled = true;
+                    break;
+            }
+        }
+
+        // Health check functions
+        async function checkHealth() {
+            healthStatus.textContent = "Checking server health...";
+            healthStatus.style.background = "rgba(255, 193, 7, 0.3)";
+            
+            try {
+                const response = await fetch("http://localhost:8080/health");
+                if (response.ok) {
+                    const data = await response.json();
+                    healthStatus.textContent = `✅ Server is healthy! Status: ${data.status || 'ok'}`;
+                    healthStatus.style.background = "rgba(76, 175, 80, 0.3)";
+                } else {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+            } catch (error) {
+                healthStatus.textContent = `❌ Server unreachable: ${error.message}`;
+                healthStatus.style.background = "rgba(244, 67, 54, 0.3)";
+            }
+        }
+
+        async function checkModels() {
+            try {
+                const response = await fetch("http://localhost:8080/v1/models");
+                const data = await response.json();
+                addToLog(`📋 Available models: ${JSON.stringify(data, null, 2)}`, true);
+            } catch (error) {
+                addToLog(`❌ Failed to get models: ${error.message}`, true);
+            }
+        }
+
+        // HTTP API functions
+        async function sendHTTPPrompt() {
+            const prompt = document.getElementById("httpPrompt").value.trim();
+            if (!prompt) {
+                addToLog("❌ Please enter a prompt", true);
+                return;
+            }
+
+            addToLog(`📤 Sending: "${prompt}"`, true);
+            
+            try {
+                const response = await fetch("http://localhost:8080/completion", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({
+                        prompt: prompt,
+                        n_predict: 128,
+                        stream: false,
+                        temperature: 0.7
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const data = await response.json();
+                addToLog(`📥 Response: ${data.content || 'No content received'}`, true);
+                
+            } catch (error) {
+                addToLog(`❌ HTTP Error: ${error.message}`, true);
+            }
+        }
+
+        // WebSocket functions
+        function connectWebSocket() {
+            if (socket && socket.readyState === WebSocket.OPEN) {
+                addToLog("⚠️ Already connected");
+                return;
+            }
+
+            updateConnectionStatus('connecting');
+            addToLog("🔌 Attempting to connect to ws://localhost:8080/");
+
+            socket = new WebSocket("ws://localhost:8080/");
+
+            socket.onopen = function(event) {
+                addToLog("✅ WebSocket connected successfully!");
+                updateConnectionStatus('connected');
+            };
+
+            socket.onmessage = function(event) {
+                try {
+                    const data = JSON.parse(event.data);
+                    if (data.content) {
+                        addToLog(`📥 ${data.content}`);
+                    } else {
+                        addToLog(`📥 ${event.data}`);
+                    }
+                } catch (e) {
+                    addToLog(`📥 ${event.data}`);
+                }
+            };
+
+            socket.onerror = function(error) {
+                addToLog("❌ WebSocket error occurred");
+                updateConnectionStatus('disconnected');
+            };
+
+            socket.onclose = function(event) {
+                addToLog(`🔌 Connection closed (Code: ${event.code}, Reason: ${event.reason || 'Unknown'})`);
+                updateConnectionStatus('disconnected');
+            };
+
+            // Timeout fallback
+            setTimeout(() => {
+                if (socket && socket.readyState === WebSocket.CONNECTING) {
+                    addToLog("⏰ Connection timeout - trying alternative path...");
+                    socket.close();
+                    
+                    // Try alternative WebSocket path
+                    socket = new WebSocket("ws://localhost:8080/ws");
+                    socket.onopen = () => {
+                        addToLog("✅ Connected via /ws path!");
+                        updateConnectionStatus('connected');
+                    };
+                    socket.onerror = () => {
+                        addToLog("❌ Failed to connect via both paths");
+                        updateConnectionStatus('disconnected');
+                    };
+                }
+            }, 5000);
+        }
+
+        function disconnectWebSocket() {
+            if (socket) {
+                socket.close();
+                socket = null;
+            }
+            updateConnectionStatus('disconnected');
+        }
+
+        function sendPrompt() {
+            const prompt = document.getElementById("prompt").value.trim();
+            if (!prompt) {
+                addToLog("❌ Please enter a prompt");
+                return;
+            }
+
+            if (!socket || socket.readyState !== WebSocket.OPEN) {
+                addToLog("❌ WebSocket not connected");
+                return;
+            }
+
+            const message = JSON.stringify({
+                prompt: prompt,
+                n_predict: 128,
+                stream: true,
+                temperature: 0.7
+            });
+
+            socket.send(message);
+            addToLog(`📤 Sent: "${prompt}"`);
+            document.getElementById("prompt").value = "";
+        }
+
+        // Utility functions
+        function clearWsLog() {
+            log.textContent = "";
+        }
+
+        function clearHttpLog() {
+            httpLog.textContent = "";
+        }
+
+        // Enter key support
+        document.getElementById("prompt").addEventListener("keypress", function(e) {
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                sendPrompt();
+            }
+        });
+
+        document.getElementById("httpPrompt").addEventListener("keypress", function(e) {
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                sendHTTPPrompt();
+            }
+        });
+
+        // Initialize
+        updateConnectionStatus('disconnected');
+        addToLog("🚀 Test interface loaded. Check server health first!");
+        addToLog("💡 Tip: HTTP API is more reliable than WebSocket for most use cases", true);
+    </script>
 </body>
 </html>

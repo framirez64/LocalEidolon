@@ -83,8 +83,8 @@ clean: CMakeFiles/Eidolon_autogen.dir/clean
 # Target rules for target CMakeFiles/Eidolon.dir
 
 # All Build rule for target.
-CMakeFiles/Eidolon.dir/all: CMakeFiles/Eidolon_autogen_timestamp_deps.dir/all
 CMakeFiles/Eidolon.dir/all: CMakeFiles/Eidolon_autogen.dir/all
+CMakeFiles/Eidolon.dir/all: CMakeFiles/Eidolon_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target Eidolon"

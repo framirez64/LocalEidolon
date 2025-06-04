@@ -11,16 +11,23 @@ public:
     explicit LLMServer(QObject* parent = nullptr);
     ~LLMServer();
 
-    bool isRunning() const { return serverProcess && serverProcess->state() != QProcess::NotRunning; }
-
-    void startServer();  // 🟢 Match the cpp file
-    void stopServer();   // 🟢 Match the cpp file
+    void startServer();
+    void stopServer();
+    bool isRunning() const;
+    QString getServerUrl() const;
 
 signals:
-    void requestReceived(const QString& prompt);
+    void serverStarted();
+    void serverStopped();
+    void serverError(const QString& error);
+
+private slots:
+    void onServerFinished(int exitCode, QProcess::ExitStatus exitStatus);
+    void onServerError(QProcess::ProcessError error);
 
 private:
     QProcess* serverProcess;
+    QString findModelPath();
 };
 
 #endif // LLMSERVER_H

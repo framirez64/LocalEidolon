@@ -3,6 +3,7 @@
 #include <QDir>
 #include <QThread>
 #include <QDebug>
+#include <QStandardPaths>
 
 LLMServer::LLMServer(QObject* parent)
     : QObject(parent), serverProcess(nullptr) {}
@@ -12,9 +13,12 @@ LLMServer::~LLMServer() {
 }
 
 void LLMServer::startServer() {
+    if (isRunning()) {
+        qDebug() << "Server already running";
+        return;
+    }
+
     if (serverProcess) {
-        serverProcess->kill();
-        serverProcess->waitForFinished();
         serverProcess->deleteLater();
     }
 
@@ -23,52 +27,122 @@ void LLMServer::startServer() {
     QString exePath = QCoreApplication::applicationDirPath() + "/llama-server.exe";
 
     if (!QFile::exists(exePath)) {
-        qWarning() << "❌ llama-server.exe not found!";
+        QString error = "llama-server.exe not found at: " + exePath;
+        qWarning() << "❌" << error;
+        emit serverError(error);
         return;
     }
 
-    QDir modelsDir(QCoreApplication::applicationDirPath() + "/Models");
-    QStringList modelFiles = modelsDir.entryList(QStringList() << "*.gguf", QDir::Files);
-
-    QString modelPath;
-    if (!modelFiles.isEmpty()) {
-        modelPath = modelsDir.absoluteFilePath(modelFiles.first());
-    } else {
-        qWarning() << "❌ No .gguf model found in Models/";
+    QString modelPath = findModelPath();
+    if (modelPath.isEmpty()) {
+        QString error = "No .gguf model found in Models/ folder";
+        qWarning() << "❌" << error;
+        emit serverError(error);
         return;
     }
 
     QStringList args;
     args << "-m" << modelPath
-         << "--port" << "8080"               // or 8000/9000 based on your client
+         << "--port" << "8080"
+         << "--host" << "0.0.0.0"  // Allow connections from localhost
          << "--ctx-size" << "4096"
          << "--threads" << QString::number(QThread::idealThreadCount())
          << "--gpu-layers" << "29"
-         << "--verbose"; // Optional, useful for debugging
+         << "--verbose";
 
     serverProcess->setProgram(exePath);
     serverProcess->setArguments(args);
 
+    // Connect signals
     connect(serverProcess, &QProcess::readyReadStandardOutput, this, [this]() {
         QByteArray output = serverProcess->readAllStandardOutput();
-        qDebug() << QString::fromUtf8(output);
+        qDebug() << "[stdout]" << QString::fromUtf8(output);
     });
 
     connect(serverProcess, &QProcess::readyReadStandardError, this, [this]() {
         QByteArray error = serverProcess->readAllStandardError();
-        qDebug() << "[stderr] " << QString::fromUtf8(error);
+        qDebug() << "[stderr]" << QString::fromUtf8(error);
     });
 
+    connect(serverProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished),
+            this, &LLMServer::onServerFinished);
+
+    connect(serverProcess, &QProcess::errorOccurred,
+            this, &LLMServer::onServerError);
+
+    qDebug() << "🚀 Starting llama-server with model:" << modelPath;
     serverProcess->start();
-    qDebug() << "🚀 llama-server started.";
+
+    if (serverProcess->waitForStarted(5000)) {
+        qDebug() << "✅ llama-server started successfully";
+        emit serverStarted();
+    } else {
+        qWarning() << "❌ Failed to start llama-server";
+        emit serverError("Failed to start server process");
+    }
 }
 
 void LLMServer::stopServer() {
-    if (serverProcess && serverProcess->state() != QProcess::NotRunning) {
-        serverProcess->terminate();
-        serverProcess->waitForFinished(3000);
-        serverProcess->deleteLater();
-        serverProcess = nullptr;
-        qDebug() << "🛑 llama-server stopped.";
+    if (!serverProcess || serverProcess->state() == QProcess::NotRunning) {
+        return;
     }
+
+    qDebug() << "🛑 Stopping llama-server...";
+    serverProcess->terminate();
+    
+    if (!serverProcess->waitForFinished(5000)) {
+        qWarning() << "Force killing llama-server";
+        serverProcess->kill();
+        serverProcess->waitForFinished(2000);
+    }
+
+    serverProcess->deleteLater();
+    serverProcess = nullptr;
+    qDebug() << "✅ llama-server stopped";
+    emit serverStopped();
+}
+
+bool LLMServer::isRunning() const {
+    return serverProcess && serverProcess->state() == QProcess::Running;
+}
+
+QString LLMServer::getServerUrl() const {
+    return "http://localhost:8080";
+}
+
+QString LLMServer::findModelPath() {
+    QDir modelsDir(QCoreApplication::applicationDirPath() + "/Models");
+    QStringList modelFiles = modelsDir.entryList(QStringList() << "*.gguf", QDir::Files);
+
+    if (!modelFiles.isEmpty()) {
+        return modelsDir.absoluteFilePath(modelFiles.first());
+    }
+    return QString();
+}
+
+void LLMServer::onServerFinished(int exitCode, QProcess::ExitStatus exitStatus) {
+    qDebug() << "Server finished with exit code:" << exitCode;
+    if (exitStatus == QProcess::CrashExit) {
+        emit serverError("Server crashed with exit code: " + QString::number(exitCode));
+    }
+    emit serverStopped();
+}
+
+void LLMServer::onServerError(QProcess::ProcessError error) {
+    QString errorString;
+    switch (error) {
+        case QProcess::FailedToStart:
+            errorString = "Failed to start server";
+            break;
+        case QProcess::Crashed:
+            errorString = "Server crashed";
+            break;
+        case QProcess::Timedout:
+            errorString = "Server timed out";
+            break;
+        default:
+            errorString = "Unknown server error";
+    }
+    qWarning() << "❌ Server error:" << errorString;
+    emit serverError(errorString);
 }

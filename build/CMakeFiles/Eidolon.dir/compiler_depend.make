@@ -154,6 +154,7 @@ CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj: Eidolon_autogen
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpolygon.h \
@@ -170,6 +171,7 @@ CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj: Eidolon_autogen
   C:/Qt/6.9.0/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMenu \
@@ -180,6 +182,7 @@ CMakeFiles/Eidolon.dir/Eidolon_autogen/mocs_compilation.cpp.obj: Eidolon_autogen
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmenu.h \
@@ -941,6 +944,7 @@ CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj: N:/Users/GitHub/LocalEidol
   C:/Qt/6.9.0/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.9.0/mingw_64/include/QtGui/QFont \
   C:/Qt/6.9.0/mingw_64/include/QtGui/QTextCursor \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qbitmap.h \
@@ -957,6 +961,7 @@ CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj: N:/Users/GitHub/LocalEidol
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpolygon.h \
@@ -974,6 +979,7 @@ CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj: N:/Users/GitHub/LocalEidol
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QHBoxLayout \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QPushButton \
@@ -984,6 +990,7 @@ CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj: N:/Users/GitHub/LocalEidol
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
@@ -1264,6 +1271,7 @@ CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/llm
   C:/Qt/6.9.0/mingw_64/include/QtCore/QDir \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QProcess \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/QStandardPaths \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QThread \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20functional.h \
@@ -1360,6 +1368,7 @@ CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/llm
   C:/Qt/6.9.0/mingw_64/include/QtCore/qsharedpointer.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qsharedpointer_impl.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qspan.h \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/qstandardpaths.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qstdlibdetection.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qstring.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qstringalgorithms.h \
@@ -2078,6 +2087,7 @@ CMakeFiles/Eidolon.dir/ui/main.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/main.cpp
 CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/trayapp.cpp \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QObject \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QProcess \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/QUrl \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
@@ -2217,11 +2227,13 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/traya
   C:/Qt/6.9.0/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/qyieldcpu.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/QAction \
+  C:/Qt/6.9.0/mingw_64/include/QtGui/QDesktopServices \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qbrush.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qcolor.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qcursor.h \
+  C:/Qt/6.9.0/mingw_64/include/QtGui/qdesktopservices.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qfont.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qfontinfo.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qfontmetrics.h \
@@ -2235,6 +2247,7 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/traya
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpolygon.h \
@@ -2252,9 +2265,11 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/traya
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMenu \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QTextEdit \
@@ -2262,10 +2277,14 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/traya
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qapplication.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmenu.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
@@ -2695,6 +2714,7 @@ Eidolon_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpalette.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpen.h \
+  C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qpolygon.h \
@@ -2711,6 +2731,7 @@ Eidolon_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLineEdit \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMenu \
@@ -2721,6 +2742,7 @@ Eidolon_autogen/timestamp: C:/Program\ Files/CMake/bin/cmake.exe \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qframe.h \
+  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlineedit.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmenu.h \
@@ -3322,6 +3344,8 @@ C:/Qt/6.9.0/mingw_64/include/QtCore/qcompare.h:
 
 C:/Qt/6.9.0/mingw_64/include/QtGui/qfontinfo.h:
 
+C:/Qt/6.9.0/mingw_64/include/QtCore/QUrl:
+
 C:/Qt/6.9.0/mingw_64/include/QtCore/qobject.h:
 
 C:/Qt/6.9.0/mingw_64/include/QtCore/qbasicatomic.h:
@@ -3366,6 +3390,8 @@ C:/Qt/6.9.0/mingw_64/include/QtCore/qlist.h:
 
 Eidolon_autogen/UYX5XTB5RZ/moc_llmserver.cpp:
 
+C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialog.h:
+
 C:/Qt/6.9.0/mingw_64/include/QtCore/qcontainerfwd.h:
 
 C:/Qt/6.9.0/mingw_64/include/QtCore/qcomparehelpers.h:
@@ -3387,6 +3413,8 @@ C:/Qt/6.9.0/mingw_64/include/QtCore/qcontainerinfo.h:
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h:
+
+C:/Qt/6.9.0/mingw_64/include/QtGui/QFont:
 
 C:/Qt/6.9.0/mingw_64/include/QtCore/qlatin1stringview.h:
 
@@ -3419,10 +3447,6 @@ C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginTargets.cm
 C:/Qt/6.9.0/mingw_64/include/QtCore/qdarwinhelpers.h:
 
 C:/Qt/6.9.0/mingw_64/include/QtGui/qtguiexports.h:
-
-C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake:
-
-C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/wmmintrin.h:
 
 C:/Qt/6.9.0/mingw_64/include/QtCore/qhash.h:
 
@@ -3612,6 +3636,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/avx512bf16vli
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h:
 
+C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMessageBox:
+
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_ios.tcc:
 
 C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractbutton.h:
@@ -3689,6 +3715,8 @@ C:/Qt/6.9.0/mingw_64/include/QtCore/qtdeprecationdefinitions.h:
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_algobase.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/lwpintrin.h:
+
+C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:
 
@@ -3779,6 +3807,8 @@ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h:
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
 
 C:/Qt/6.9.0/mingw_64/include/QtGui/QAction:
+
+C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h:
 
 C:/Qt/6.9.0/mingw_64/include/QtGui/qaction.h:
 
@@ -3891,6 +3921,10 @@ C:/Qt/6.9.0/mingw_64/include/QtCore/qfileinfo.h:
 C:/Qt/6.9.0/mingw_64/include/QtGui/qtguiglobal.h:
 
 C:/Qt/6.9.0/mingw_64/include/QtGui/qwindowdefs_win.h:
+
+C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake:
+
+C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel:
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendCertOnlyPluginAdditionalTargetInfo.cmake:
 
@@ -4128,6 +4162,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_set.h:
 
+C:/Qt/6.9.0/mingw_64/include/QtGui/qdesktopservices.h:
+
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_list.h:
@@ -4159,6 +4195,8 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersionImpl.cmake:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_vector.h:
+
+C:/Qt/6.9.0/mingw_64/include/QtCore/qstandardpaths.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tr1/poly_laguerre.tcc:
 
@@ -4334,9 +4372,9 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w6
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/utility:
 
-C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/variant:
-
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/wbnoinvdintrin.h:
+
+C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/variant:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/vector:
 
@@ -4565,6 +4603,10 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/tsxldtrkintri
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/vpclmulqdqintrin.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/waitpkgintrin.h:
+
+C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Network/Qt6QTlsBackendOpenSSLPluginConfig.cmake:
+
+C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/wmmintrin.h:
 
 C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/x86gprintrin.h:
 
@@ -4798,11 +4840,25 @@ C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream:
 
 C:/Qt/6.9.0/mingw_64/include/QtCore/QDebug:
 
+C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake:
+
+C:/Qt/6.9.0/mingw_64/include/QtCore/QStandardPaths:
+
 C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h:
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake:
 
 C:/Qt/6.9.0/mingw_64/include/QtWidgets/qapplication.h:
+
+C:/Qt/6.9.0/mingw_64/include/QtGui/QDesktopServices:
+
+N:/Users/GitHub/LocalEidolon/CMakeLists.txt:
+
+C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h:
+
+C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake:
+
+C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h:
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake:
 
@@ -4869,8 +4925,6 @@ C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX-ABI.cm
 C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU-CXX.cmake:
 
 C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-GNU.cmake:
-
-C:/Program\ Files/CMake/share/cmake-3.31/Modules/Platform/Windows-Initialize.cmake:
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake:
 
@@ -4998,8 +5052,6 @@ C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake:
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake:
 
-C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake:
-
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake:
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake:
@@ -5050,8 +5102,6 @@ C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6NetworkPrivate/Qt6NetworkPrivateVersionlessAli
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginAdditionalTargetInfo.cmake:
 
-C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Widgets/Qt6QModernWindowsStylePluginConfig.cmake:
-
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake:
@@ -5075,8 +5125,6 @@ C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateAdditionalTargetInfo.cmake:
 
 C:/Qt/6.9.0/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfig.cmake:
-
-N:/Users/GitHub/LocalEidolon/CMakeLists.txt:
 
 CMakeFiles/3.31.7/CMakeSystem.cmake:
 
