@@ -161,11 +161,26 @@ CMakeFiles/Eidolon.dir/ui/llmserver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Eidolon.dir/ui/llmserver.cpp.s"
 	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S N:\Users\GitHub\LocalEidolon\ui\llmserver.cpp -o CMakeFiles\Eidolon.dir\ui\llmserver.cpp.s
 
+CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj: CMakeFiles/Eidolon.dir/flags.make
+CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj: CMakeFiles/Eidolon.dir/includes_CXX.rsp
+CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/settingsdialog.cpp
+CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj: CMakeFiles/Eidolon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj"
+	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj -MF CMakeFiles\Eidolon.dir\ui\settingsdialog.cpp.obj.d -o CMakeFiles\Eidolon.dir\ui\settingsdialog.cpp.obj -c N:\Users\GitHub\LocalEidolon\ui\settingsdialog.cpp
+
+CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.i"
+	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E N:\Users\GitHub\LocalEidolon\ui\settingsdialog.cpp > CMakeFiles\Eidolon.dir\ui\settingsdialog.cpp.i
+
+CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.s"
+	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S N:\Users\GitHub\LocalEidolon\ui\settingsdialog.cpp -o CMakeFiles\Eidolon.dir\ui\settingsdialog.cpp.s
+
 CMakeFiles/Eidolon.dir/ui/civetweb.c.obj: CMakeFiles/Eidolon.dir/flags.make
 CMakeFiles/Eidolon.dir/ui/civetweb.c.obj: CMakeFiles/Eidolon.dir/includes_C.rsp
 CMakeFiles/Eidolon.dir/ui/civetweb.c.obj: N:/Users/GitHub/LocalEidolon/ui/civetweb.c
 CMakeFiles/Eidolon.dir/ui/civetweb.c.obj: CMakeFiles/Eidolon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Eidolon.dir/ui/civetweb.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Eidolon.dir/ui/civetweb.c.obj"
 	C:\Qt\Tools\mingw1310_64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Eidolon.dir/ui/civetweb.c.obj -MF CMakeFiles\Eidolon.dir\ui\civetweb.c.obj.d -o CMakeFiles\Eidolon.dir\ui\civetweb.c.obj -c N:\Users\GitHub\LocalEidolon\ui\civetweb.c
 
 CMakeFiles/Eidolon.dir/ui/civetweb.c.i: cmake_force
@@ -180,7 +195,7 @@ CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj: CMakeFiles/Eidolon.dir/flags.make
 CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj: CMakeFiles/Eidolon.dir/includes_CXX.rsp
 CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj: N:/Users/GitHub/LocalEidolon/ui/CivetServer.cpp
 CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj: CMakeFiles/Eidolon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj -MF CMakeFiles\Eidolon.dir\ui\CivetServer.cpp.obj.d -o CMakeFiles\Eidolon.dir\ui\CivetServer.cpp.obj -c N:\Users\GitHub\LocalEidolon\ui\CivetServer.cpp
 
 CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.i: cmake_force
@@ -195,7 +210,7 @@ CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFi
 CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/Eidolon.dir/includes_CXX.rsp
 CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj: Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/Eidolon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 	C:\Qt\Tools\mingw1310_64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\Eidolon.dir\Eidolon_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\Eidolon.dir\Eidolon_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c N:\Users\GitHub\LocalEidolon\build\Eidolon_autogen\EWIEGA46WW\qrc_resources.cpp
 
 CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
@@ -213,6 +228,7 @@ Eidolon_OBJECTS = \
 "CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj" \
 "CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj" \
 "CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj" \
+"CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj" \
 "CMakeFiles/Eidolon.dir/ui/civetweb.c.obj" \
 "CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj" \
 "CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
@@ -225,6 +241,7 @@ Eidolon.exe: CMakeFiles/Eidolon.dir/ui/main.cpp.obj
 Eidolon.exe: CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj
 Eidolon.exe: CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj
 Eidolon.exe: CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj
+Eidolon.exe: CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj
 Eidolon.exe: CMakeFiles/Eidolon.dir/ui/civetweb.c.obj
 Eidolon.exe: CMakeFiles/Eidolon.dir/ui/CivetServer.cpp.obj
 Eidolon.exe: CMakeFiles/Eidolon.dir/Eidolon_autogen/EWIEGA46WW/qrc_resources.cpp.obj
@@ -237,7 +254,7 @@ Eidolon.exe: C:/Qt/6.9.0/mingw_64/lib/libQt6EntryPoint.a
 Eidolon.exe: CMakeFiles/Eidolon.dir/linkLibs.rsp
 Eidolon.exe: CMakeFiles/Eidolon.dir/objects1.rsp
 Eidolon.exe: CMakeFiles/Eidolon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Eidolon.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Eidolon.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Eidolon.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

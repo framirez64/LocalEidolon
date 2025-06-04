@@ -329,6 +329,9 @@ CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qshareddata.h \
+ N:\Users\GitHub\LocalEidolon\ui\llamasettings.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qstring.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/QCoreApplication \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qcoreapplication.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qcoreevent.h \

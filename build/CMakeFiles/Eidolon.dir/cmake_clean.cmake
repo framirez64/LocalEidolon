@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj.d"
   "CMakeFiles/Eidolon.dir/ui/main.cpp.obj"
   "CMakeFiles/Eidolon.dir/ui/main.cpp.obj.d"
+  "CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj"
+  "CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj.d"
   "CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj"
   "CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj.d"
   "Eidolon.exe"

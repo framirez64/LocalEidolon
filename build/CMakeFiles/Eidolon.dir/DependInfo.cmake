@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "N:/Users/GitHub/LocalEidolon/ui/conversationwindow.cpp" "CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj.d"
   "N:/Users/GitHub/LocalEidolon/ui/llmserver.cpp" "CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/llmserver.cpp.obj.d"
   "N:/Users/GitHub/LocalEidolon/ui/main.cpp" "CMakeFiles/Eidolon.dir/ui/main.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/main.cpp.obj.d"
+  "N:/Users/GitHub/LocalEidolon/ui/settingsdialog.cpp" "CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj.d"
   "N:/Users/GitHub/LocalEidolon/ui/trayapp.cpp" "CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj" "gcc" "CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj.d"
   )
 

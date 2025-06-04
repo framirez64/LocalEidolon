@@ -322,6 +322,30 @@ ui/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/main.cpp.s
 .PHONY : ui/main.cpp.s
 
+ui/settingsdialog.obj: ui/settingsdialog.cpp.obj
+.PHONY : ui/settingsdialog.obj
+
+# target to build an object file
+ui/settingsdialog.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.obj
+.PHONY : ui/settingsdialog.cpp.obj
+
+ui/settingsdialog.i: ui/settingsdialog.cpp.i
+.PHONY : ui/settingsdialog.i
+
+# target to preprocess a source file
+ui/settingsdialog.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.i
+.PHONY : ui/settingsdialog.cpp.i
+
+ui/settingsdialog.s: ui/settingsdialog.cpp.s
+.PHONY : ui/settingsdialog.s
+
+# target to generate assembly for a file
+ui/settingsdialog.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/ui/settingsdialog.cpp.s
+.PHONY : ui/settingsdialog.cpp.s
+
 ui/trayapp.obj: ui/trayapp.cpp.obj
 .PHONY : ui/trayapp.obj
 
@@ -378,6 +402,9 @@ help:
 	@echo ... ui/main.obj
 	@echo ... ui/main.i
 	@echo ... ui/main.s
+	@echo ... ui/settingsdialog.obj
+	@echo ... ui/settingsdialog.i
+	@echo ... ui/settingsdialog.s
 	@echo ... ui/trayapp.obj
 	@echo ... ui/trayapp.i
 	@echo ... ui/trayapp.s

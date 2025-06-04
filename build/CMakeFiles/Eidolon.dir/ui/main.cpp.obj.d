@@ -330,6 +330,9 @@ CMakeFiles/Eidolon.dir/ui/main.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qshareddata.h \
+ N:\Users\GitHub\LocalEidolon\ui\llamasettings.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qstring.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -394,6 +397,8 @@ CMakeFiles/Eidolon.dir/ui/main.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qaction.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qsettings.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qcoreapplication.h \

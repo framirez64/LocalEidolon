@@ -330,6 +330,9 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cassert \
  C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qshareddata.h \
+ N:\Users\GitHub\LocalEidolon\ui\llamasettings.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qstring.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSystemTrayIcon \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qsystemtrayicon.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -394,6 +397,8 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qaction.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qwidget.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qsettings.h \
  N:\Users\GitHub\LocalEidolon\ui\conversationwindow.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -416,6 +421,31 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
+ N:\Users\GitHub\LocalEidolon\ui\settingsdialog.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSpinBox \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qspinbox.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qvalidator.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QCheckBox \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qcheckbox.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QSlider \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QComboBox \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qcombobox.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qstyle.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabbar.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QTabWidget \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qtabwidget.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -429,7 +459,6 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qinputmethod.h \
- C:/Qt/6.9.0/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/QDesktopServices \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qdesktopservices.h \
@@ -438,4 +467,6 @@ CMakeFiles/Eidolon.dir/ui/trayapp.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QMessageBox \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qmessagebox.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialog.h \
- C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QStandardPaths \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qstandardpaths.h

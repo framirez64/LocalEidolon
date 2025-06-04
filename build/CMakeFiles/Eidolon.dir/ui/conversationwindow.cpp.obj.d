@@ -404,6 +404,9 @@ CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj: \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QLabel \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlabel.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/qpicture.h \
+ N:\Users\GitHub\LocalEidolon\ui\llamasettings.h \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
+ C:/Qt/6.9.0/mingw_64/include/QtCore/qstring.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/QVBoxLayout \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.9.0/mingw_64/include/QtWidgets/qlayout.h \
@@ -476,4 +479,7 @@ CMakeFiles/Eidolon.dir/ui/conversationwindow.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/atomic_futex.h \
  C:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_thread.h \
  C:/Qt/6.9.0/mingw_64/include/QtGui/QFont \
- C:/Qt/6.9.0/mingw_64/include/QtGui/qfont.h
+ C:/Qt/6.9.0/mingw_64/include/QtGui/qfont.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/QScrollBar \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qscrollbar.h \
+ C:/Qt/6.9.0/mingw_64/include/QtWidgets/qabstractslider.h

@@ -1,6 +1,7 @@
 N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/UYX5XTB5RZ/moc_conversationwindow.cpp: N:/Users/GitHub/LocalEidolon/ui/conversationwindow.h \
   N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/moc_predefs.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/QProcess \
+  C:/Qt/6.9.0/mingw_64/include/QtCore/QString \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q17memory.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.9.0/mingw_64/include/QtCore/q20iterator.h \
@@ -390,4 +391,5 @@ N:/Users/GitHub/LocalEidolon/build/Eidolon_autogen/UYX5XTB5RZ/moc_conversationwi
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
+  N:/Users/GitHub/LocalEidolon/ui/llamasettings.h

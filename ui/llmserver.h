@@ -3,6 +3,7 @@
 
 #include <QObject>
 #include <QProcess>
+#include "llamasettings.h"
 
 class LLMServer : public QObject {
     Q_OBJECT
@@ -15,6 +16,7 @@ public:
     void stopServer();
     bool isRunning() const;
     QString getServerUrl() const;
+    void updateSettings(const LlamaSettings& settings);
 
 signals:
     void serverStarted();
@@ -27,7 +29,9 @@ private slots:
 
 private:
     QProcess* serverProcess;
+    LlamaSettings currentSettings;
     QString findModelPath();
+    QStringList buildServerArguments();
 };
 
 #endif // LLMSERVER_H

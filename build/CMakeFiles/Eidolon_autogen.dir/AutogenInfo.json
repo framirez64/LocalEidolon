@@ -372,6 +372,12 @@
 			null
 		],
 		[
+			"N:/Users/GitHub/LocalEidolon/ui/settingsdialog.h",
+			"MU",
+			"UYX5XTB5RZ/moc_settingsdialog.cpp",
+			null
+		],
+		[
 			"N:/Users/GitHub/LocalEidolon/ui/trayapp.h",
 			"MU",
 			"UYX5XTB5RZ/moc_trayapp.cpp",
@@ -460,6 +466,7 @@
 		[ "N:/Users/GitHub/LocalEidolon/ui/conversationwindow.cpp", "MU", null ],
 		[ "N:/Users/GitHub/LocalEidolon/ui/llmserver.cpp", "MU", null ],
 		[ "N:/Users/GitHub/LocalEidolon/ui/main.cpp", "MU", null ],
+		[ "N:/Users/GitHub/LocalEidolon/ui/settingsdialog.cpp", "MU", null ],
 		[ "N:/Users/GitHub/LocalEidolon/ui/trayapp.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

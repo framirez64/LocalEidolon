@@ -83,16 +83,16 @@ clean: CMakeFiles/Eidolon_autogen.dir/clean
 # Target rules for target CMakeFiles/Eidolon.dir
 
 # All Build rule for target.
-CMakeFiles/Eidolon.dir/all: CMakeFiles/Eidolon_autogen.dir/all
 CMakeFiles/Eidolon.dir/all: CMakeFiles/Eidolon_autogen_timestamp_deps.dir/all
+CMakeFiles/Eidolon.dir/all: CMakeFiles/Eidolon_autogen.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target Eidolon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target Eidolon"
 .PHONY : CMakeFiles/Eidolon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Eidolon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start N:\Users\GitHub\LocalEidolon\build\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start N:\Users\GitHub\LocalEidolon\build\CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Eidolon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start N:\Users\GitHub\LocalEidolon\build\CMakeFiles 0
 .PHONY : CMakeFiles/Eidolon.dir/rule
@@ -104,7 +104,7 @@ Eidolon: CMakeFiles/Eidolon.dir/rule
 # codegen rule for target.
 CMakeFiles/Eidolon.dir/codegen: CMakeFiles/Eidolon_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon.dir\build.make CMakeFiles/Eidolon.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Finished codegen for target Eidolon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Finished codegen for target Eidolon"
 .PHONY : CMakeFiles/Eidolon.dir/codegen
 
 # clean rule for target.
@@ -151,7 +151,7 @@ CMakeFiles/Eidolon_autogen_timestamp_deps.dir/clean:
 CMakeFiles/Eidolon_autogen.dir/all: CMakeFiles/Eidolon_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon_autogen.dir\build.make CMakeFiles/Eidolon_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon_autogen.dir\build.make CMakeFiles/Eidolon_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=12 "Built target Eidolon_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=13 "Built target Eidolon_autogen"
 .PHONY : CMakeFiles/Eidolon_autogen.dir/all
 
 # Build rule for subdir invocation for target.
@@ -168,7 +168,7 @@ Eidolon_autogen: CMakeFiles/Eidolon_autogen.dir/rule
 # codegen rule for target.
 CMakeFiles/Eidolon_autogen.dir/codegen: CMakeFiles/Eidolon_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Eidolon_autogen.dir\build.make CMakeFiles/Eidolon_autogen.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=12 "Finished codegen for target Eidolon_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=N:\Users\GitHub\LocalEidolon\build\CMakeFiles --progress-num=13 "Finished codegen for target Eidolon_autogen"
 .PHONY : CMakeFiles/Eidolon_autogen.dir/codegen
 
 # clean rule for target.

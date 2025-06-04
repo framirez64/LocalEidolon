@@ -6,10 +6,18 @@
 #include <QStandardPaths>
 
 LLMServer::LLMServer(QObject* parent)
-    : QObject(parent), serverProcess(nullptr) {}
+    : QObject(parent), serverProcess(nullptr) {
+    // Initialize with default settings
+    currentSettings = LlamaSettings();
+}
 
 LLMServer::~LLMServer() {
     stopServer();
+}
+
+void LLMServer::updateSettings(const LlamaSettings& settings) {
+    currentSettings = settings;
+    qDebug() << "🔧 Updated server settings";
 }
 
 void LLMServer::startServer() {
@@ -41,14 +49,9 @@ void LLMServer::startServer() {
         return;
     }
 
-    QStringList args;
-    args << "-m" << modelPath
-         << "--port" << "8080"
-         << "--host" << "0.0.0.0"  // Allow connections from localhost
-         << "--ctx-size" << "4096"
-         << "--threads" << QString::number(QThread::idealThreadCount())
-         << "--gpu-layers" << "29"
-         << "--verbose";
+    QStringList args = buildServerArguments();
+    args.prepend(modelPath);
+    args.prepend("-m");
 
     serverProcess->setProgram(exePath);
     serverProcess->setArguments(args);
@@ -71,6 +74,7 @@ void LLMServer::startServer() {
             this, &LLMServer::onServerError);
 
     qDebug() << "🚀 Starting llama-server with model:" << modelPath;
+    qDebug() << "⚙️ Arguments:" << args.join(" ");
     serverProcess->start();
 
     if (serverProcess->waitForStarted(5000)) {
@@ -80,6 +84,43 @@ void LLMServer::startServer() {
         qWarning() << "❌ Failed to start llama-server";
         emit serverError("Failed to start server process");
     }
+}
+
+QStringList LLMServer::buildServerArguments() {
+    QStringList args;
+    
+    // Basic server settings
+    args << "--port" << "8080";
+    args << "--host" << "0.0.0.0";
+    args << "--verbose";
+    
+    // Context and model settings
+    args << "--ctx-size" << QString::number(currentSettings.contextSize);
+    args << "--gpu-layers" << QString::number(currentSettings.gpuLayers);
+    
+    // Thread settings
+    int threads = currentSettings.threads;
+    if (threads <= 0) {
+        threads = QThread::idealThreadCount();
+    }
+    args << "--threads" << QString::number(threads);
+    
+    // Generation settings that can be set at server level
+    args << "--temp" << QString::number(currentSettings.temperature, 'f', 2);
+    args << "--top-k" << QString::number(currentSettings.topK);
+    args << "--top-p" << QString::number(currentSettings.topP, 'f', 2);
+    
+    // System prompt if provided
+    if (!currentSettings.systemPrompt.isEmpty()) {
+        args << "--system-prompt" << currentSettings.systemPrompt;
+    }
+    
+    // Thinking mode support (if the server supports it)
+    if (currentSettings.thinkingMode) {
+        args << "--thinking";  // Some llama-server versions support this
+    }
+    
+    return args;
 }
 
 void LLMServer::stopServer() {

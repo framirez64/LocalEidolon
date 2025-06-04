@@ -31,6 +31,7 @@ set(APP_SOURCES
     ui/trayapp.cpp
     ui/conversationwindow.cpp
     ui/llmserver.cpp
+    ui/settingsdialog.cpp
     resources.qrc
 )
 
